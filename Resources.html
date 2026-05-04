@@ -1,51 +1,50 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
 	<title>Download Audio resources</title>
-	<link rel="stylesheet" href="style.css">
-	<center>
-	<h1>RESOURCES</h1>
-	</center>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>	
-
 <body>
-
-<nav class="navbar">
-	<br>
-	<a
-href="index.html">Home</a>
-	<a
-href="Animations.html">Animations</a>
-	<a
-href="Projects.html">Projects</a>
-	<a
-href="Resources.html">Resources</a>
-	<a
-href="Contact.html">Contact</a>
-	</br>
-	</nav>	 
-
-<br>
-<p>If your looking for animating resources, Download down below FOR FREE!!!!!</p>
-</br>
-
-<div class="resources-container">
-	<div class="resource-card">
-	<h2>SFX Folder</h2>
-	<a href=""class="download.btn">Download</a>
-	</div>
+    <header>
 	
-	<div class="resource-card">
-	<h2>Background Music</h2>
-	<a href=""class="download.btn">Download</a>
-	</div>
-</div>
- 
- 
- 
-<footer>
-@VinceAnimation 2026. All rights reserved.
-</footer>
+	<!-- MENU BUTTON -->
+       <button id="menuBtn" class="menu-btn" onclick="openMenu()">☰</button>
+	   
+	   <!-- SIDE MENU -->
+        <nav id="sideMenu" class="side-menu">
+            <span class="close-btn" onclick="closeMenu()">← Close menu</span>
+            <a href="index.html">Home</a>
+            <a href="Animations.html">Animations</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+	
+	<!-- BLUR OVERLAY -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
+    <main class="main-content">
+        <h1>RESOURCES</h1>
+        <p>If you're looking for resources, I have provided one of my own collections. Download FOR FREE!</p>
+
+        <section class="resources-container">
+            <article class="resource-card">
+                <h2>SFX Folder</h2>
+                <a href="https://drive.google.com/drive/folders/1KD44ck_Q5o8tnL5DszLUG6jCby3pmFdy?usp=drive_link" class="btn btn-outline-info">Download</a>
+            </article>
+            
+            <article class="resource-card">
+                <h2>Background Music</h2>
+                <a href="https://drive.google.com/drive/folders/1a506LQbI1c2m2iRbjCSbZeB1YGDw8vIh?usp=drive_link" class="btn btn-outline-info">Download</a>
+            </article>
+        </section>
+    </main>
+ 
+    <footer>@VinceAnimation 2026. All rights reserved.</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
