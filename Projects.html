@@ -1,102 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
 	<title>Projects</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-<h1>PROJECTS</h1>
-
-<div class="nav-container">
-<nav class="navbar">
-	<a href="index.html">Home</a>
-	<a href="Animations.html">Animations</a>
-	<a href="Projects.html">Projects</a>
-	<a href="Resources.html">Resources</a>
-	<a href="Contact.html">Contact</a>
-</nav>
-</div>
-
-<br>
-<div class="banner">
-	<img src="images/ETERNAL-RIVALS-3-22-2025 (2).png" alt="logo">
-</div>
-</br>
-
-<div class="project-container">
-
-		<div class="poster">
-			<img src="images/ETERNAL RIVALS POSTER.jpg" alt="poster">
-		</div>
-		
-		<div class="info">
-			<h2>Description</h2>
-	<p>
-	Meet  
-	Vince,Kratal and friends who discover powerful
-	abilities connected to mysterious crystals and to protect mankind against evil foes
+    <header>
 	
-	<hr>
-	Genre: Anime, Animation
-	</hr>
+	<!-- MENU BUTTON -->
+      <button id="menuBtn" class="menu-btn" onclick="openMenu()">☰</button>
+	  
+	  <!-- SIDE MENU -->
+        <nav id="sideMenu" class="side-menu"> 
+            <span class="close-btn" onclick="closeMenu()">← Close menu</span> 
+            <a href="index.html">Home</a>
+            <a href="Animations.html">Animations</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
 	
-	<hr>
-	Studios: VinceAnimation
-	<br>Producers: Vincekeleb, Thobo Keakopa</br>
-	</hr>
-	
-	</p>
-	
-	<p><b>Year:</b> 2021 </p>
-	<p><b>Status:</b> Currently ongoing </p>
-	<p><b>Aired:</b> 2021 to ?</p>
-	</div>
+	<!-- BLUR OVERLAY -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
-</div>
+    <main>
+        <h1>PROJECTS</h1>
+        <div class="banner">
+            <img src="ETERNAL-RIVALS-3-22-2025 (2).png" alt="Project Banner">
+        </div>
 
-<!--EPISODEES -->
-<div class="section">
-		<h2>Episodes</h2>
-		
-		<div class="episodes">
-			<a
-		href="https://youtu.be/nUIJfu1PitM?si=kpTjWBR8_0RvDOnB=VIDEO1" target="_blank"
-		class="episode-card">▶ Episodes 1
-			</a>
-			
-			<a
-		href="https://youtu.be/bbLq1uxrkAQ?si=AGp1ARlsWmFMBELq=VIDEO2/1" target="_blank"
-		class="episode-card">▶ Episodes 2/1
-			</a>
-			
-			<a
-		href="https://youtu.be/oLxkQ6l_o3Y?si=LStVO3YrjZPWFFxr=VIDEO2/2" target="_blank"
-		class="episode-card">▶ Episodes 2/2
-			</a>
-			
-			<a
-		href="https://youtu.be/ZknMKPWEKQ0?si=nNA21NBQ-Bed3-JQ=VIDEO3" target="_blank"
-		class="episode-card">▶ Episodes 3
-			</a>
-			
-			<a
-		href="https://youtu.be/XjtK36YiAMY?si=rmE7zoo3FbDz33jP=VIDEO4" target="_blank"
-		class="episode-card">▶ Episodes 4
-			</a>
-			
-		</div>
-</div>
-<style>
+        <article class="project-container">
+            <figure class="poster">
+                <img src="ETERNAL RIVALS POSTER.jpg" alt="Eternal Rivals Poster">
+            </figure>
+            
+            <section class="info">
+                <h2>Description</h2>
+                <p>Meet Vince, Kratal and friends who discover powerful abilities connected to mysterious crystals.</p>
+                <hr>
+                <p><strong>Genre:</strong> Anime, Animation</p>
+                <p><strong>Studios:</strong> VinceAnimation</p>
+                <p><strong>Producers:</strong> Vincekeleb, Thobo Keakopa</p>
+                <p><strong>Year:</strong> 2021</p>
+				<p><strong>Status:</strong> currently airing</p>
+            </section>
+        </article>
 
+        <section class="section">
+            <h2>Episodes</h2>
+            <nav class="episodes">
+               <a href="https://youtu.be/nUIJfu1PitM" target="_blank" class="episode-card">▶ Episode 1</a>
+                <a href="https://youtu.be/bbLq1uxrkAQ" target="_blank" class="episode-card">▶ Episode 2/1</a>
+                <a href="https://youtu.be/oLxkQ6l_o3Y" target="_blank" class="episode-card">▶ Episode 2/2</a>
+				<a href="https://youtu.be/ZknMKPWEKQ0?si=LXeR9CzLKqDKaV8_" target="_blank" class="episode-card">▶ Episode 3</a>
+				<a href="https://youtu.be/XjtK36YiAMY?si=AYRlusrUS_6eVxYy" target="_blank" class="episode-card">▶ Episode 4</a>
+            </nav>
+        </section>
+    </main>
 
-	
+    <footer>@VinceAnimation 2026. All rights reserved.</footer>
 
-</style>
-
-
-<footer>@VinceAnimation 2026. All rights reserved.</footer>
+    <script src="script.js"></script>
 </body>
 </html>
-		
