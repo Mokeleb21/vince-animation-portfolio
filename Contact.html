@@ -1,35 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>feedback and contact</title>
-
+    <title>Feedback and Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-<div class="contact-container">
+    <header>
+	
+	<!-- MENU BUTTON -->
+        <button id="menuBtn" class="menu-btn" onclick="openMenu()">☰</button>
+		
+		 <!-- SIDE MENU -->
+        <nav id="sideMenu" class="side-menu">
+            <span class="close-btn" onclick="closeMenu()">← Close menu</span>
+            <a href="index.html">Home</a>
+            <a href="Animations.html">Animations</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+	
+	<!-- BLUR OVERLAY -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
-    <h1>Contact Me</h1>
-    <p class="contact-subtext">
-        Email me if you have any questions or anything:
-    </p>
-
-   
-    <div class="email-box">
+    <main class="contact-container">
+         
+    <section class="email-box">
         <h3>EMAIL LINK</h3>
+		<a href="mailto:mohaukelebogile341@gmail.com" target="_blank">
         <p>mohaukelebogile341@gmail.com</p>
-    </div>
+		</a>
+    </section>
 
-    
-    <div class="qa-box">
-        <h3>Q&A SECTION</h3>
-        <input type="text" placeholder="Drop your question here..." class="qa-input">
-        <button class="submit-btn">Submit</button>
-    </div>
+            <section>
+                <h3>Q&A SECTION</h3>
+                    <input type="text" id="name" placeholder="Your Name" class="qa-input mb-2">
+                    <textarea id="message" placeholder="Drop your Message...." class="qa-input mb-2" rows="3"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+    </main>
 
-</div>
+    <footer>@VinceAnimation 2026. All rights reserved.</footer>
 
+    <script src="script.js"></script>
 </body>
-
-
-
 </html>
